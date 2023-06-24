@@ -1,0 +1,617 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .first-section {
+    position: relative;
+    height: 657px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/bg_1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+.navigation{
+  background-color: #fff;
+  padding: 35px 100px;
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+}
+.navigation ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+.navigation ul li{
+  margin-left: 40px;
+}
+
+  .navigation li:first-child {
+    margin-left: 0;
+  }
+
+.navigation ul li a{
+    text-decoration: none;
+    color: #000;
+    padding: 0 20px;
+    font-size: 20px;
+    transition: color 0.3s ease-in-out;
+    margin-top:-70px;
+}
+  .navigation a:hover,
+  #active-page {
+    color: #f89d13;
+  }
+.navigation .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+
+input[type="checkbox"]{
+  display: none;
+}
+
+  .text-container{
+    margin-top:110px;
+  }
+
+  .main-text, .sub-text{
+    color:#fff;
+    text-align: center;
+    font-size:60px;
+    font-weight: bold;
+  }
+
+  .rectangle-button {
+    background-color: #f89d13;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    font-size: 20px;
+    transition: background-color 0.3s, border-color 0.3s;
+    border: 2px solid #f89d13;
+    padding:10px 50px;
+  }
+
+  #started_button{
+    display: flex;
+    justify-content: center;
+    padding-top:20px;
+  }
+  
+  .rectangle-button:hover {
+    background-color: transparent;
+    border: 2px solid #fff;
+  }
+
+  .card-1 {
+    background-color: #f89d13;
+    color: #fff;
+    padding: 20px;
+    border-radius: 0;
+    text-align: center;
+  }
+  
+  .icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: transparent;
+    margin: 0 auto 15px;
+    border: 2px solid #fff;
+    padding: 40px;
+  }
+  
+  .icon-container i {
+    color: #fff;
+    font-size: 30px;
+  }
+  
+  .card-title {
+    margin: 0;
+    font-size: 24px;
+    padding: 20px;
+  }
+  
+  .card-paragraph {
+    margin: 0;
+    font-size: 16px;
+    padding: 5px 50px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .card-2 {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    border-radius: 0;
+    text-align: center;
+  }
+  
+  .card-3 {
+    background-color: #f89d13;
+    color: #fff;
+    padding: 20px;
+    border-radius: 0;
+    text-align: center;
+  }
+  
+  #card-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    padding-bottom: 100px;
+  }
+  
+  #cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .card-1,
+  .card-2,
+  .card-3 {
+    width: 350px;
+    height: 350px;
+    margin: -120px 0;
+    z-index: 200;
+  }
+  
+  
+  .owl-carousel .item {
+    margin: 0;
+    transition: transform 0.3s ease;
+    transform-origin: center center;
+    transform: scale(1);
+    position: relative;
+    perspective: 1000px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .owl-carousel .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .owl-carousel .item:hover{
+    transform: scale(1.2) rotateX(10deg);
+  }
+
+  .owl-carousel .item h3{
+    position: absolute;
+    top:310px;
+    color: #fff;
+    z-index: 1;
+  }
+
+  .owl-carousel .item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    z-index: 0;
+  }
+
+  .owl-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+  }
+
+  .owl-buttons {
+    margin-top: 20px;
+    margin-left:640px;
+  }
+
+  .owl-buttons button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #000;
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .owl-buttons button:focus {
+    outline: none;
+  }
+
+  #owl-carousel-all{
+    margin-top:40px;
+  }
+
+  #whatoffer .offers{
+    margin-top:100px;
+    text-align: center;
+  }
+
+  .offers{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .offer-title{
+    color:#f89d13;
+  }
+
+  .offer-text{
+    color:rgba(0, 0, 0, 0.5);
+  }
+
+  .animated-text {
+    opacity: 0;
+    animation: fade-in 1s ease-in-out forwards;
+  }
+
+  .line {
+    height: 4px;
+    background-color: #f89d13;
+  }
+
+  .line-offer{
+    width:360px;
+  }
+
+  .line-service{
+    width:300px;
+  }
+
+  .line-teklif{
+    width:460px;
+  }
+
+  .line-xidmet{
+    width:350px;
+  }
+
+  .fa-plane, .fa-ship, .card-body .fa-truck-fast, .fa-warehouse, .fa-box, .fa-van-shuttle{
+    font-size: 35px;
+    color:#f89d13;
+    margin-left:-55px;
+    position: absolute;
+  }
+  #last-title{
+    margin-top: 130px;
+    text-align: center;
+  }
+
+  #try-services{
+    padding-bottom:100px;
+  }
+
+  footer {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    margin-top:100px;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .footer-section ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .footer-section ul li {
+    margin-bottom: 5px;
+    color: rgba(255, 255, 255, 0.5);
+    transition: color 0.3s;    
+  }
+
+  .footer-section ul li:hover,
+  .footer-section ul li:focus {
+    color: rgba(255, 255, 255, 1);
+    background-color: transparent;
+  }  
+
+  .footer-section a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+
+  .footer-section .social-icons {
+    margin-top: 10px;
+  }  
+
+  .footer-section .social-icons a {
+    margin-right: 10px;
+    color: #fff;
+  }
+
+  .footer-section .social-icons a:hover {
+    color: #f89d13;
+  }
+
+  .footer-bottom {
+    font-size: 14px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    padding-top: 50px;
+    padding-bottom: 40px;
+    color:rgba(255, 255, 255, 0.5);
+  }
+
+  .footer-section ul li a:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  
+  .whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #25D366;
+    color: #fff;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+    z-index: 300;
+    animation: jump 2.5s infinite;
+  }
+  
+  .whatsapp-btn:hover {
+    background-color: #128C7E;
+    color:#fff;
+  }
+  
+  .fa-whatsapp {
+    margin-top: 1px;
+  }
+
+  .air-freight, .warehousing, .ocean-freight, .storage, .ground-shipping, .delivery-van{
+    color:rgba(0, 0, 0, 0.7);
+    margin-left:60px;
+  }
+
+  #logo{
+    height:80px;
+    margin-top:-30px;
+  }
+
+  #black-line{
+    display: flex;
+    height:35px;
+    align-items: center;
+    background-color: #000;
+    color:#fff;
+    margin-top:0;
+  }
+
+  #black-line p{
+    margin-left:100px;
+    margin-top:15px;
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(140px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes jump {
+    0% {
+      transform: translateY(0);
+    }
+    50%{
+      transform: translateY(-30px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .navigation{
+      height:70px;
+    }
+
+    .navigation .menu-btn i{
+      display: block;
+      margin-left: 300%;
+      color:#000;
+      margin-top:-10px;
+    }
+    #click:checked ~ .menu-btn i:before{
+      content: "\f00d";
+    }
+    .navigation ul{
+      position: fixed;
+      top:0;
+      left: -100%;
+      background: #fff;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      display: block;
+      transition: all 0.3s ease;
+      z-index:1000;
+    }
+    #click:checked ~ ul{
+      left: 0;
+    }
+    
+    label{
+      z-index:1001;
+    }
+    
+    .navigation ul li{
+      width: 100%;
+      margin: 20px 0;
+    }
+    .navigation ul li a{
+      width: 100%;
+      margin-left: -100%;
+      display: block;
+      font-size: 20px;
+      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    #click:checked ~ ul li a{
+      margin-left: 0px;
+      margin-top:0px;
+      padding: 15px;
+      color:#000;
+      border-bottom:1px solid #000;
+    }
+    .navigation ul li a.active,
+    .navigation ul li a:hover{
+      background: none;
+      color: #f89d13;
+    }
+
+    #logo{
+      margin-left:-90px;
+      height:60px;
+    }
+
+    .main-text, .sub-text{
+      font-size: 30px;
+      margin-top: 20px;
+    }
+
+    .sub-text{
+      margin-top: 0;
+    }
+
+    .rectangle-button{
+      margin-top:20px;
+    }
+
+    #cards {
+      flex-direction: column;
+    }
+  
+    .card-1,
+    .card-2,
+    .card-3 {
+      width: 100%;
+      margin: 0 0 0;
+    }
+
+    #card-container{
+      margin-top:-100px;
+      padding: 0;
+    }
+
+    .offers{
+      font-size: 15px;
+    }
+
+    #freights{
+      margin-top:-500px;
+    }
+
+    .offer-title{
+      margin-top: 20px;
+    }
+
+    .line {
+      height: 4px;
+      background-color: #f89d13;
+    }
+  
+    .line-offer{
+      width:300px;
+    }
+  
+    .line-service{
+      width:260px;
+    }
+  
+    .line-teklif{
+      width:360px;
+    }
+  
+    .line-xidmet{
+      width:340px;
+    }
+
+    .offer-title-az{
+      font-size: 35px;
+    }
+
+    .offer-text-az{
+      font-size:15px;
+    }
+
+    .air-freight , .ocean-freight , .ground-shipping , .warehousing, .storage, .delivery-van{
+      margin-left: 50px;
+      margin-top:40px;
+    }
+
+    .owl-buttons{
+      margin-left: 160px;
+    }
+
+    .footer-section{
+      padding: 10px;
+    }
+
+    .first-section{
+      background-position: center center;
+    }
+    
+    .none{
+      display: none;
+    }
+
+    #black-line{
+      margin-left: -70px;
+      height:30px;
+    }
+
+    .whatsapp-btn{
+      width: 60px;
+      height: 60px;
+    }
+  }
+  
